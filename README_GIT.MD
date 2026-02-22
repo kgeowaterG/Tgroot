@@ -61,4 +61,4 @@ $git checkout -b [<newbranch>] (새로운 브랜치를 만듬 newbranch 라는 �
 $git checkout branchname (brachname으로 Head 이동)
 $git checkout main (일단 main으로 헤드를 옮기고)
 $git merge branchname (main에 branchname을 merge하여 정리하고)
-$git checkout -d brachnmae (brachname이 역할을 다했다면 -d 옵션으로 지워도 됨)
+$git branch -d brachnmae (brachname이 역할을 다했다면 -d 옵션으로 지워도 됨)
