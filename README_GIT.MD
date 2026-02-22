@@ -7,7 +7,17 @@ $git add README.md
 $git commit -m "first commit"
 $git branch -M main
 
-Git을 특정 폴더에 로컬로 만들고 특정 github 계정과 연결시키는 방식은 local user와 email을 만들고, 
+
+-------------------------------------------
+Git을 특정 폴더에 로컬로 만들고 특정 github 계정과 연결시키는 방식은 local user와 email을 만들고, (글로벌, 로컬 모두 가능함 글로벌은 ~ 디렉토리에 .)
+git config --global user.name "My_name"    (영어이름 넣고) 
+git config --globla user.email "My_email"  (이메일 주소 넣고)  --> ~/.gitconfig 에 기록됨
+
+git config --local user.name "My_name"    (영어이름 넣고) 
+git config --local user.email "My_email"  (이메일 주소 넣고)  --> mypathrepo/.git/config 에 기록됨
+----------------------------------------------------------
+
+
 
 일단 다음과 같은 내용을 참조하여 시작하면 된다. 다음 문자은 토큰을 사용하는 방법이며, 토큰은 다음과 같이 만든다. 
 ----
@@ -35,13 +45,13 @@ Git을 특정 폴더에 로컬로 만들고 특정 github 계정과 연결시키
 .방법 B: URL에 토큰을 포함하여 등록 (이미 리모트가 연결된 경우)
   매번 입력하기 번거롭다면 원격 저장소 주소에 토큰을 미리 심어둘 수 있습니다.
 -------------------
-git remote set-url origin https://<토큰문자열>@github.com/<사용자명>/<저장소명>.git
+git remote add origin https://<토큰문자열>@github.com/<사용자명>/<저장소명>.git  (처음 origin 만들때)
+git remote set-url origin https://<토큰문자열>@github.com/<사용자명>/<저장소명>.git (orgin의 리모트를 변경할 때)
 -------------------
 
 
 
-
-
-많으쓰는 git 명령
+많이 쓰는 git 명령
 $git --verison   (버전 확인)
 $git remote -v  (리모트 지정 상황 확인)
+$git log (그동안 커밋 등을 확인하기)
