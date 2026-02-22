@@ -55,3 +55,7 @@ git remote set-url origin https://<토큰문자열>@github.com/<사용자명>/<�
 $git --verison   (버전 확인)
 $git remote -v  (리모트 지정 상황 확인)
 $git log (그동안 커밋 등을 확인하기)
+$git status (git의 상태를 점검한다)
+$git checkout (기본적으로 브랜치 작업을 위한 일이며, HEAD가 pointing하는 사항 정의)
+$git checkout -b [<newbranch>] (새로운 브랜치를 만듬 newbranch 라는 이름)
+$git checkout branchname (brachname으로 Head 이동)
